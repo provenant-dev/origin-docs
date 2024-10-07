@@ -6,7 +6,7 @@ description: what it means to "sign with" a vLEI
 
 In casual speech, we sometimes say that an organization or a person can "sign with" a [vLEI](../concepts/creds/vleis/). We need to define this behavior carefully.
 
-The party that receives a vLEI is called its _issuee_. For LE vLEIs, the issuee is the legal entity (an organization). For OOR and ECR vLEIs, the issuee is an individual who has a specific role at the organization. A vLEI formally references its issuee by their [AID](../../../glossary.md#aid) (a long, hard-to-remember string -- something like`EBMYrQqWyRLAYqMLYv_qm-qP7eKN81Wmjyz5nXQvYLY`).
+The party that receives a vLEI is called its _issuee_. For LE vLEIs, the issuee is the legal entity (an organization). For OOR and ECR vLEIs, the issuee is an individual who has a specific role at the organization. A vLEI formally references its issuee by their [AID](../../glossary.md#aid) (a long, hard-to-remember string -- something like`EBMYrQqWyRLAYqMLYv_qm-qP7eKN81Wmjyz5nXQvYLY`).
 
 The AID of the issuee can be used to look up a cryptographic [public key](https://en.wikipedia.org/wiki/Public-key\_cryptography) controlled by the issuee. The corresponding private key is a secret known only to the issuee. The issuee can use the private key to create digital signatures, and anybody in the world can use the public key to check those signatures. This is how an issuee proves they control the vLEI.
 
