@@ -6,7 +6,7 @@ description: Defines terms used in Origin documentation.
 
 _Note: Mostly, this terminology is specific to the Origin platform. Theoretical and formally standardized cryptographic and cybersecurity terms are introduced only lightly. For more details about those concepts, see the_ [_KERI ecosystem_](https://keri.one)_'s_ [_KERISSE website_](https://kerisse.org)_,_ [_GLEIF_](https://gleif.org)_'s_ [_vLEI Governance Framework_](https://www.gleif.org/en/vlei/introducing-the-vlei-ecosystem-governance-framework)_, the_ [_Trust Over IP Glossary_](https://trustoverip.github.io/toip/glossary)_,_ [_Hyperledger Aries RFCs_](https://github.com/hyperledger/aries-rfcs/blob/main/index.md)_, and W3C's_ [_Verifiable Credentials Data Model_](https://www.w3.org/TR/vc-data-model/) _and_ [_Decentralized Identifiers (DIDs)_](https://www.w3.org/TR/did-core/)_._
 
-### aid
+### AID
 
 A self-certifying identifier which cryptographically binds an identifier to a public and private key pair. It is an identifier that can be proven to be the one and only identifier tied to a public key using cryptography alone. A vLEI formally references its issuee by the issuee's AID.
 
