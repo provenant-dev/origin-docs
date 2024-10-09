@@ -15,6 +15,7 @@
 
 ## Concepts
 
+* [PII](concepts/pii.md)
 * [Credentials and Verifiable Data](concepts/creds/README.md)
   * [Formats](concepts/creds/formats.md)
   * [Issuing](concepts/creds/issuing.md)
