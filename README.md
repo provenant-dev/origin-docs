@@ -23,7 +23,7 @@ Origin Cloud&trade; helps organizations construct and manage their digital ident
 Which features of Origin are most relevant to you depends on your perspective:
 
 - If you belong to an org that needs to consume Origin features, see [Clients](perspectives/clients.md).
-- If you belong to an org that uses Origin to deliver value-added identity features to others, see [Service Providers](perspectives/sps/).
+- If you belong to an org that uses Origin to deliver value-added identity features to others, see [Service Providers](perspectives/sps/README.md).
 - If you are a developer who wants to create services on Origin, see [Developers](perspectives/developers.md).
 
 ---
@@ -61,7 +61,7 @@ To preview rendering locally, you can use any Markdown viewer. For a faithful Gi
 
 There is no automated test suite. Quality checks are manual:
 
-1. Confirm all internal Markdown links resolve to real files (`grep -r '\]\(\./' .` is a quick scan).
+1. Confirm all internal Markdown links resolve to real files (`grep -rP '\]\((?!https?://)' .` is a quick scan for any non-HTTP Markdown link).
 2. Confirm the `SUMMARY.md` table of contents includes any new pages you added.
 3. Open a pull request; a human reviewer checks content accuracy before merging.
 
@@ -88,11 +88,11 @@ origin-docs/
 │       ├── issuing.md      # How to issue credentials
 │       ├── verifying.md    # How to verify credentials
 │       └── vleis/
-│               README.md   # vLEI overview and index
-│               why.md      # Problems solved by vLEIs
-│               types.md    # LE, OOR, ECR, and QVI vLEI types
-│               journey.md  # Step-by-step path to vLEI issuance
-│               uses.md     # Ways to use vLEIs
+│               ├── README.md   # vLEI overview and index
+│               ├── why.md      # Problems solved by vLEIs
+│               ├── types.md    # LE, OOR, ECR, and QVI vLEI types
+│               ├── journey.md  # Step-by-step path to vLEI issuance
+│               └── uses.md     # Ways to use vLEIs
 ├── tasks/
 │   └── sign-with-vlei.md   # How-to: signing content with a vLEI
 └── .gitbook/
